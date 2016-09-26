@@ -19,6 +19,15 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: square outside;
+  padding-left: 40px;
+}
+
 .lead {
   font-family: 'Josefin Sans', sans-serif;
   font-weight:600;
