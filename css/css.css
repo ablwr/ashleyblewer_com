@@ -20,7 +20,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline double;
 }
 
 ul {
@@ -35,6 +35,7 @@ ul {
   margin-top:60px;
   font-size: 36px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .img-circle {
