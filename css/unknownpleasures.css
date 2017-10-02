@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+  color: white;
+  line-height: 0;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  margin-top: 0;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ img {
+   filter: grayscale();
+ }
+a {
+  color: white;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
