@@ -165,7 +165,7 @@
         <p>You can also find me on <a href="http://twitter.com/ablwr">twitter</a>. I'm pretty good at <a href="https://twitter.com/ablwr/status/771522317058969600">tweeting</a>.</p>
       </div>
       <div class="footer">
-        <footer></footer>
+        <footer><span id="unknownpleasures" alt="unknown pleasures" title="unknown pleasures" style="float:right">π</span></footer>
       </div>
     </div>
     <!-- <script type="text/javascript" src="js/welcome.min.js"></script> -->
@@ -174,7 +174,11 @@
       btn.addEventListener('click', (e) => {
         document.getElementById('neworder').href = "css/" + btn.id + ".css"
       }, false);
-    }
+    };
+
+    document.getElementById('unknownpleasures').addEventListener('click', (e) => {
+      document.getElementById('neworder').href = "css/unknownpleasures.css"
+    }, false);
     </script>
   </body>
 </html>
