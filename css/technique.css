@@ -44,3 +44,20 @@ h4 {
 a {
   color: #ffb6c1;
 }
+
+@keyframes technique {
+	0% {
+		color: #ffb6c1;
+	}
+	50% {
+		color: #b20059;
+	}
+	100% {
+		color: #ffb6c1;
+	}
+}
+
+a:hover {
+    animation: technique ease-in-out 1s infinite;
+	text-decoration: none;
+}

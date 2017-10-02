@@ -4,43 +4,56 @@ body {
   background-color: lightblue;
 }
 
-.main-image {
-  margin-bottom: 1rem;
+.introduction {
+  font-family: 'Nunito Sans', sans-serif;
+  text-transform: uppercase;
 }
 
-.main-image::before {
-  font-family: 'Nunito Sans', sans-serif;
-  content: "| |\00a0";
+.main-image {
+  position: relative;
+}
+
+.main-image:before {
+  content: "|";
   font-size: 12rem;
   font-weight: 800;
   color: midnightblue;
 }
 
+.main-image:after {
+  content: "|";
+  font-size: 12rem;
+  font-weight: 800;
+  color: midnightblue;
+  position: relative;
+  left: 22vw;
+}
+
 .main-image img {
   width: 7rem;
   height: 7rem;
-}
-
-.introduction {
-  font-family: 'Nunito Sans', sans-serif;
+  position: absolute;
+  right: 0px;
+  top: 60px;
 }
 
 .introduction h1 {
   font-size: 4.65rem;
   font-weight: 900;
-  text-transform: uppercase;
   border-top: 2rem solid midnightblue;
   border-bottom: 2rem solid midnightblue;
   margin-bottom: -2rem;
   line-height: 4rem;
-  margin-top: -3rem;
+  margin-top: -2rem;
+}
+
+.introduction h2 {
+  border-bottom: 2rem solid midnightblue;
 }
 
 .introduction .partone {
   font-size: 3.239rem;
   font-weight: 900;
-  text-transform: uppercase;
-  border-bottom: 2rem solid midnightblue;
   line-height: 3rem;
   margin-bottom: 0.3rem;
 }
@@ -48,19 +61,29 @@ body {
 .introduction .parttwo {
   font-size: 1.9rem;
   font-weight: 900;
-  text-transform: uppercase;
-  border-bottom: 2rem solid midnightblue;
   line-height: 1.9rem;
   margin-top: 0;
   margin-bottom: 0;
 }
 
+.parttwo:after {
+  display: block;
+  width: 7rem;
+  height: 7rem;
+  background: midnightblue;
+  content: "";
+  border-radius: 3.5rem;
+  float: right;
+  margin-top: 90px;
+}
+
 .introduction::after {
-  content: "|  \00a0·";
+  content: "|";
   font-size: 12rem;
   font-weight: 800;
   color: midnightblue;
   line-height: 10rem;
+  line-height: 9.3rem;
 }
 
 .content {
