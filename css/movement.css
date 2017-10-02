@@ -4,13 +4,16 @@ body {
   background-color: lightblue;
 }
 
+.main-image {
+  margin-bottom: 1rem;
+}
+
 .main-image::before {
   font-family: 'Nunito Sans', sans-serif;
-  content: "|  |";
-  font-size: 20rem;
+  content: "| |\00a0";
+  font-size: 12rem;
   font-weight: 800;
   color: midnightblue;
-  padding-right: 13rem;
 }
 
 .main-image img {
@@ -53,12 +56,11 @@ body {
 }
 
 .introduction::after {
-  content: "|  \00a0\00a0·";
-  font-size: 20rem;
+  content: "|  \00a0·";
+  font-size: 12rem;
   font-weight: 800;
   color: midnightblue;
-  line-height: 16rem;
-  letter-spacing: 2.27rem;
+  line-height: 10rem;
 }
 
 .content {
