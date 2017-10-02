@@ -12,8 +12,6 @@ body {
 
 .main-image img {
   border-radius: 0;
-  opacity: 0.2;
-  filter: grayscale(100%);
 }
 
 .introduction {
@@ -21,10 +19,24 @@ body {
   letter-spacing: 0.5rem;
   text-align: center;
   text-transform: uppercase;
+  filter: grayscale(100%);
+  opacity: 0.2;
+}
+
+h1, h2 {
+  transform: rotateZ(90deg);
+  position: fixed;
+  right: 0;
 }
 
 h1 {
   font-size: 3.5rem;
+  right: 10rem;
+}
+
+h2 {
+  bottom: 15rem;
+  width: 30rem;
 }
 
 .lead {
