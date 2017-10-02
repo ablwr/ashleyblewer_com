@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700;');
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  background-color: rgba(200,180,180,0.2);
+}
+
+.main-image img {
+  border-radius: 0px
+}
+
+.main-image {
+  background-image: linear-gradient(to right, rgb(104,168,152), rgb(104,168,152) 42.9%, rgb(206,115,26) 42.9%, rgb(206,115,26) 57.2%, rgb(71,60,120) 57.2%, rgb(71,60,120) 71.5%, rgb(144,189,208) 71.5%, rgb(144,189,208) 85.8%, rgb(218,175,184) 85.8%, rgb(218,175,184));
+	background-size: 100% 50rem;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+  line-height: 0;
+}
+
+h1 {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 2.9rem;
+  line-height: 2.9rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.content {
+  font-family: 'Helvetica', sans-serif;
+}
+
+a {
+  color: rgb(104,168,152)
+}
+
+a:visited {
+  color: rgb(134,124,158)
+}

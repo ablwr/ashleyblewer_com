@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700;Open+Sans:400,900;');
+
+body {
+  background: linear-gradient(to bottom, #b20059 0%, #00004d 14%, black 14%, black);
+  color: white;
+  font-weight: 400;
+}
+
+.main-image img {
+  filter: hue-rotate(180deg) contrast(8);
+}
+
+.introduction {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.content {
+  font-size: 1.25rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.lead {
+  font-family: 'Open Sans', sans-serif;
+  color: #ff1d8e;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  color: #ff1d8e;
+  font-weight: 900;
+}
+
+a {
+  color: #ffb6c1;
+}

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,900;Josefin+Sans:400,700,900');
+
+body {
+  background-color: lightblue;
+}
+
+.main-image::before {
+  font-family: 'Nunito Sans', sans-serif;
+  content: "|  |";
+  font-size: 20rem;
+  font-weight: 800;
+  color: midnightblue;
+  padding-right: 13rem;
+}
+
+.main-image img {
+  width: 7rem;
+  height: 7rem;
+}
+
+.introduction {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.introduction h1 {
+  font-size: 4.65rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-top: 2rem solid midnightblue;
+  border-bottom: 2rem solid midnightblue;
+  margin-bottom: -2rem;
+  line-height: 4rem;
+  margin-top: -3rem;
+}
+
+.introduction .partone {
+  font-size: 3.239rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-bottom: 2rem solid midnightblue;
+  line-height: 3rem;
+  margin-bottom: 0.3rem;
+}
+
+.introduction .parttwo {
+  font-size: 1.9rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-bottom: 2rem solid midnightblue;
+  line-height: 1.9rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.introduction::after {
+  content: "|  \00a0\00a0·";
+  font-size: 20rem;
+  font-weight: 800;
+  color: midnightblue;
+  line-height: 16rem;
+  letter-spacing: 2.27rem;
+}
+
+.content {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.08rem;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.lead {
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+  font-size: 2.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}

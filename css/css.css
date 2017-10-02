@@ -1,50 +1,95 @@
-.container {
-  max-width: 660px;
-}
-
-h1 {
-  font-size: 8rem;
-  line-height: 12rem;
-  font-weight: 800;
-  padding-top: 2rem;
-  margin-bottom: 1rem;
-  font-family: 'Josefin Sans', san-serif;
-}
-
-h2 {
-  font-size: 4rem;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 400;
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,900;');
 
 body {
   font-family: 'Open Sans', sans-serif;
 }
 
-a {
-  text-decoration: #0FA0CE underline wavy;
+#container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+  "style-nav"
+  "header"
+  "main"
+  "footer";
+  max-width: 40em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-ul {
-  list-style: square outside;
-  padding-left: 40px;
+.style-nav {
+  grid-area: style-nav;
 }
 
-.lead {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 600;
-  margin-bottom: 40px;
-  margin-top:60px;
-  font-size: 36px;
-  line-height: 30px;
-  text-transform: uppercase;
+.introduction {
+  grid-area: header;
 }
 
-.img-circle {
-  margin-top: 14rem;
-  -webkit-border-radius: 500px;
-  -moz-border-radius: 500px;
+.content {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.main-image img {
   border-radius: 500px;
-  float:right;
-  margin-bottom:12px;
+}
+
+.style-nav {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.style-nav img {
+  width: 25px;
+  height: 25px;
+}
+
+.style-nav ul {
+  color: #fff;
+  padding-left: 0;
+}
+
+.style-nav li {
+  display: inline-block;
+  background: rgb(22, 160, 133);
+  line-height: 2.4rem;
+}
+
+.style-nav ul > li:first-child {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border-radius: 5px 0 0 5px;
+}
+
+.style-nav ul > li:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.style-nav button {
+  height: 35px;
+  border: 0;
+  color: white;
+  background: transparent;
+  text-decoration: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+#null {
+  vertical-align: top;
+}
+
+.style-nav li:hover {
+  background: #fa5ba5;
+  border-color: #fa5ba5;
+}
+
+.style-nav ul > li:first-child:hover {
+  background: rgb(22, 160, 133);
+  border-color: rgb(22, 160, 133);
 }

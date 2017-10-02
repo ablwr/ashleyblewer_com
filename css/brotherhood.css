@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  background-image: -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, color-stop(50%, rgba(12,12,56,0.2)), color-stop(100%, rgba(73,86,110, 0))), -webkit-gradient(radial, 100% 10%, 0, 100% 10%, 80, color-stop(20%, rgba(68,71,82,0.3)), color-stop(80%, rgb(62,70,111))), -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(1%, #475ead), color-stop(50%, rgb(38,81,92)), color-stop(100%, rgba(12,12,56,0.2)));
+  background-image: -webkit-radial-gradient(50% 100%, ellipse cover, rgba(12,12,56,0.2) 50%, rgba(73,86,110, 0) 100%), -webkit-radial-gradient(100% 10%, ellipse cover, rgba(68,71,82,0.3) 20%, rgb(62,70,111) 80%), -webkit-linear-gradient(left top, #475ead 1%, rgb(38,81,92) 50%, rgba(12,12,56,0.2) 100%);
+  background-image: -moz-radial-gradient(50% 100%, ellipse cover, rgba(12,12,56,0.2) 50%, rgba(73,86,110, 0) 100%), -moz-radial-gradient(100% 10%, ellipse cover, rgba(68,71,82,0.3) 20%, rgb(62,70,111) 80%), -moz-linear-gradient(left top, #475ead 1%, rgb(38,81,92) 50%, rgba(12,12,56,0.2) 100%);
+  background-image: radial-gradient(50% 100%, ellipse cover, rgba(12,12,56,0.2) 50%, rgba(73,86,110, 0) 100%), radial-gradient(100% 10%, ellipse cover, rgba(68,71,82,0.3) 20%, rgb(62,70,111) 80%), linear-gradient(left top, #475ead 1%, rgb(38,81,92) 50%, rgba(12,12,56,0.2) 100%);
+    /*z-index:-5;*/
+}
+
+.main-image img {
+  border-radius: 0;
+  opacity: 0.2;
+  filter: grayscale(100%);
+}
+
+.introduction {
+  font-weight: 800;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+.lead {
+  text-transform: uppercase;
+}
+
+a {
+  color: midnightblue;
+}
+
+a:visited {
+  color: black;
+}
