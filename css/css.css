@@ -93,3 +93,11 @@ body {
   background: rgb(22, 160, 133);
   border-color: rgb(22, 160, 133);
 }
+
+#unknownpleasures {
+  float: right;
+}
+
+footer a {
+  float: left;
+}
