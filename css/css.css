@@ -81,6 +81,7 @@ body {
 }
 
 .style-nav li {
+  margin: 0;
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   transition-duration: 0.3s;
