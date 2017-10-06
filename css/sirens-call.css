@@ -1,0 +1,68 @@
+/* Aidan Zanders wrote this here https://codepen.io/catjuice/pen/gGGwXg/ */
+/* and I compiled it below */
+
+* {
+  font-family: "Helvetica Neue", sans-serif;
+}
+h1, h2, h3 {
+  color: #eb8026;
+}
+a {
+  color: #eb8026;
+  text-decoration: none;
+}
+h1 {
+  font-weight: lighter;
+  font-size: 3rem;
+}
+h1:first-letter {
+  font-size: 20rem;
+  font-weight: lighter !important;
+  padding-right: 0.5rem;
+}
+.introduction {
+  position: relative;
+  margin-bottom: -5rem;
+}
+.introduction .partone {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 0px;
+  position: absolute;
+  top: 0px;
+}
+.introduction .parttwo {
+  font-size: 1rem;
+  position: absolute;
+  top: 1rem;
+}
+.main-image img {
+  display: none;
+}
+h3.lead {
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid #eb8026;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.125rem;
+  margin-top: 2.5rem;
+}
+h3.lead ~ p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  width: 75%;
+}
+ul {
+  display: block;
+  margin-left: 0rem;
+  padding: 0;
+  list-style-type: none;
+}
+ul li {
+  list-style: none;
+  display: block;
+  margin: 0.5rem 0rem 0.25rem 0rem;
+}
+ul li a:hover {
+  text-decoration: underline;
+}
