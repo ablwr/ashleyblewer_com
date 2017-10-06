@@ -89,13 +89,13 @@ body {
 }
 
 .style-nav li:hover, .style-nav li:focus, .style-nav li:active {
-  -webkit-transform: translateY(4px);
   transform: translateY(4px);
   background: #fa5ba5;
   border-color: #fa5ba5;
 }
 
 .style-nav ul > li:first-child:hover {
+  transform: none;
   background: rgb(22, 160, 133);
   border-color: rgb(22, 160, 133);
 }
