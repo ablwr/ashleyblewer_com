@@ -1,0 +1,113 @@
+html {
+  font-family: "Open Sans";
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+body {
+ background: linear-gradient(to bottom, black 10%,#1c507d 30%, #76a7d1 70%,#4da956 90%,#205519 100%);
+ margin: 0;
+ padding: 0;
+} 
+
+header {
+  /*height: 100vmax;*/
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+  margin: 0;
+}
+
+h1 {
+  font-style: italic;
+  padding: 4em;
+  padding-top: 8em;
+  font-size: 3em;
+}
+
+h2 {
+  line-height: 1.2em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(30, 0.5fr);
+  /* 2019 Q1 = 1 */
+  /* 2018 = 2,3,4,5 winter,fall,summer,spring */
+  /* 2017 = 6,7,8,9 */
+  /* 2016 = 10,11,12,13 */
+  /* 2015 = 14,15,16,17 */
+  /* 2014 = 18,19,20,21 */
+  /* 2013 = 22,23,24,25 */
+  /* 2012 = 26,27,28,29 */
+  /* 2011 Q4 = 30 */
+  grid-column-gap: 0.5em;
+  padding: 0.5em;
+ }
+ 
+.grid-container div {
+  display: grid;
+  align-items: center;
+  border-top: 4px solid #223a59;
+  border-bottom: 4px solid #223a59;
+  margin: 0.5em;
+  background: rgba(1,2,3,20%);
+  /*background: linear-gradient(to right, 
+    transparent 0%, 
+    transparent calc(50% - 0.81px), 
+    #223a59 calc(50% - 4px), 
+    #223a59 calc(50% + 4px), 
+    transparent calc(50% + 0.81px), 
+    transparent 100%); */
+}
+
+.grid-container div section {
+  background-color: #272f39;
+  padding: 0.5em;
+  z-index: 1000;
+}
+
+.grid-container div section p {
+  font-style: italic;
+  margin: 0;
+  font-weight: bold;
+}
+
+.grid-container .mmdg {
+  grid-column: 1 / 3;
+  grid-row: 4 / 7;
+}
+
+.grid-container .nypl {
+  grid-column: 1 / 3;
+  grid-row: 7 / 13;
+}
+
+.grid-container .mediaconch {
+  grid-column: 3 / 5;
+  grid-row: 5 / 19;
+}
+
+.grid-container .qctools {
+  grid-column: 5 / 7;
+  grid-row: 6 / 21;
+}
+
+.grid-container .lamama {
+  grid-column: 2 / 4;
+  grid-row: 12 / 17;
+}
+
+.grid-container .bc {
+  grid-column: 1 / 3;
+  grid-row: 17 / 19;
+}
+
+.grid-container .mirc {
+  grid-column: 1 / 3;
+  grid-row: 20 / 31;
+}
