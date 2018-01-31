@@ -7,14 +7,10 @@ html {
 }
 
 body {
- background: linear-gradient(to bottom, black 10%,#1c507d 30%, #76a7d1 70%,#4da956 90%,#205519 100%);
+ background: linear-gradient(to bottom, black 10%,#1c507d 25%, #2985d5 30%, #76a7d1 70%,#7ad283 80%,#205519 100%);
  margin: 0;
  padding: 0;
 } 
-
-header {
-  /*height: 100vmax;*/
-}
 
 h1, h2, h3, h4 {
   font-weight: normal;
@@ -31,6 +27,16 @@ h1 {
 h2 {
   line-height: 1.2em;
 }
+
+a, a:visited {
+  color: white;
+}
+
+dt {
+  font-weight: 800;
+}
+
+/**/
 
 .grid-container {
   display: grid;
@@ -55,13 +61,28 @@ h2 {
   border-top: 4px solid #223a59;
   border-bottom: 4px solid #223a59;
   margin: 0.25em;
-  background: linear-gradient(to right, transparent 0%, 33%, rgba(1,2,3,20%) 33%, rgba(1,2,3,20%) 66%, transparent 66%, transparent 100%);
+  /*background: linear-gradient(to right, transparent 0%, 33%, rgba(1,2,3,20%) 33%, rgba(1,2,3,20%) 66%, transparent 66%, transparent 100%);*/
+  background: rgba(1,2,3,25%);
+}
+
+@media (max-width: 777px) {
+  .grid-container {
+    display: block;
+  }
 }
 
 .grid-container div section {
-  background-color: #272f39;
+  background-color: #0c1015;
   padding: 0.5em;
-  z-index: 1000;
+  z-index: 1001;
+}
+
+.grid-container .mmdg section, .grid-container .mediaconch section, .grid-container .mirc section {
+  z-index: 1002;
+}
+
+.grid-container .bc section {
+  z-index: 1003;
 }
 
 .grid-container div section p {
@@ -98,12 +119,16 @@ h2 {
 .grid-container .bc {
   grid-column: 1 / 3;
   grid-row: 17 / 19;
-  z-index: 1001;
 }
 
 .grid-container .mirc {
   grid-column: 1 / 3;
-  grid-row: 20 / 31;
+  grid-row: 20 / 30;
+}
+
+.grid-container .other {
+  grid-column: 4 / 7;
+  grid-row: 22 / 26;
 }
 
 /**/
