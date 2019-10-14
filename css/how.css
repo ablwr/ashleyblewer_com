@@ -14,17 +14,17 @@ body {
 } 
  
 @keyframes swinging{
-    0%{transform: rotate(10deg);}
+    0%{transform: rotate(15deg);}
     50%{transform: rotate(-5deg)}
-    100%{transform: rotate(10deg);}
+    100%{transform: rotate(15deg);}
 }
 
 .human {
   float: right;
   padding: 4em;
   position: absolute;
-  transform: rotate(5deg);
-  transform-origin: 30% 0;
+  transform: rotate(10deg);
+  transform-origin: bottom;
   animation: swinging 15s ease-in-out forwards infinite;
 }
 
@@ -39,6 +39,7 @@ h1 {
   padding: 5em;
   padding-top: 12em;
   font-size: 3em;
+  color: rgb(21, 21, 89);
 }
 
 h2 {
