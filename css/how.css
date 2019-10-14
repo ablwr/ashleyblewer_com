@@ -12,6 +12,12 @@ body {
  padding: 0;
 } 
 
+.human {
+  float: right;
+  padding: 4em;
+  position: absolute;
+}
+
 h1, h2, h3, h4 {
   font-weight: normal;
   margin: 0;
@@ -19,8 +25,8 @@ h1, h2, h3, h4 {
 
 h1 {
   font-style: italic;
-  padding: 4em;
-  padding-top: 8em;
+  padding: 5em;
+  padding-top: 12em;
   font-size: 3em;
 }
 
@@ -41,16 +47,17 @@ dt {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(30, 8em);
-  /* 2019 Q1 = 1 */
-  /* 2018 = 2,3,4,5 winter,fall,summer,spring */
-  /* 2017 = 6,7,8,9 */
-  /* 2016 = 10,11,12,13 */
-  /* 2015 = 14,15,16,17 */
-  /* 2014 = 18,19,20,21 */
-  /* 2013 = 22,23,24,25 */
-  /* 2012 = 26,27,28,29 */
-  /* 2011 Q4 = 30 */
+  grid-template-rows: repeat(36, 8em);
+  /* 2020 = 1, 2, 3, 4, 5*/
+  /* 2019 Q1 = 6,7,8,9  */
+  /* 2018 = 6,7,8,9 */
+  /* 2017 = 10,11,12,13 */
+  /* 2016 = 14,15,16,17 */
+  /* 2015 = 18,19,20,21 */
+  /* 2014 = 22,23,24,25 */
+  /* 2013 = 26,27,28,29 */
+  /* 2012 = 30,31,32,33 */
+  /* 2011 = 34 */
   grid-column-gap: 0.5em;
   padding: 0.5em;
  }
@@ -61,7 +68,6 @@ dt {
   border-top: 4px solid #223a59;
   border-bottom: 4px solid #223a59;
   margin: 0.25em;
-  /*background: linear-gradient(to right, transparent 0%, 33%, rgba(1,2,3,20%) 33%, rgba(1,2,3,20%) 66%, transparent 66%, transparent 100%);*/
   background: rgba(1,2,3,25%);
 }
 
@@ -93,47 +99,47 @@ dt {
 
 .grid-container .artefactual {
   grid-column: 3 / 5;
-  grid-row: 1 / 6;
+  grid-row: 1 / 10;
 }
 
 .grid-container .mmdg {
   grid-column: 1 / 3;
-  grid-row: 3 / 7;
+  grid-row: 7 / 11;
 }
 
 .grid-container .nypl {
   grid-column: 1 / 3;
-  grid-row: 7 / 15;
+  grid-row: 11 / 19;
 }
 
 .grid-container .mediaconch {
   grid-column: 3 / 5;
-  grid-row: 6 / 19;
+  grid-row: 10 / 23;
 }
 
 .grid-container .qctools {
   grid-column: 5 / 7;
-  grid-row: 5 / 21;
+  grid-row: 9 / 25;
 }
 
 .grid-container .lamama {
   grid-column: 4 / 6;
-  grid-row: 13 / 17;
+  grid-row: 17 / 21;
 }
 
 .grid-container .bc {
   grid-column: 1 / 3;
-  grid-row: 17 / 19;
+  grid-row: 21 / 23;
 }
 
 .grid-container .mirc {
   grid-column: 1 / 3;
-  grid-row: 20 / 30;
+  grid-row: 24 / 34;
 }
 
 .grid-container .other {
   grid-column: 4 / 7;
-  grid-row: 22 / 26;
+  grid-row: 26 / 30;
 }
 
 /**/
