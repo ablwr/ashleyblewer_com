@@ -86,7 +86,17 @@ footer > a {
   border-top: 4px solid #223a59;
   border-bottom: 4px solid #223a59;
   margin: 0.25em;
-  background: rgba(1,2,3,25%);
+  background: rgba(1,1,1,15%);
+}
+
+.grid-container div:nth-child(even) {
+  margin-right: -0.4em;
+  transform: rotate(0.25deg);
+}
+
+.grid-container div:nth-child(odd) {
+  margin-left: -0.4em;
+  transform: rotate(-0.25deg);
 }
 
 @media (max-width: 777px) {
