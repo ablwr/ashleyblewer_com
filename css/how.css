@@ -1,26 +1,36 @@
 html {
-  font-family: "Open Sans";
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   background-color: black;
   color: white;
+  font-size: 20px;
 }
 
 body {
- background: linear-gradient(to bottom, black 10%,#1c507d 25%, #2985d5 30%, #76a7d1 70%,#7ad283 80%,#205519 100%);
+ background: linear-gradient(to bottom, #7ea5ff 0%, #182848 100%);
  margin: 0;
  padding: 0;
 } 
+ 
+@keyframes swinging{
+    0%{transform: rotate(10deg);}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(10deg);}
+}
 
 .human {
   float: right;
   padding: 4em;
   position: absolute;
+  transform: rotate(5deg);
+  transform-origin: 30% 0;
+  animation: swinging 15s ease-in-out forwards infinite;
 }
 
 h1, h2, h3, h4 {
-  font-weight: normal;
   margin: 0;
+  font-family: 'Playfair Display', serif;
 }
 
 h1 {
@@ -47,7 +57,7 @@ dt {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(36, 8em);
+  grid-template-rows: repeat(34, 8em);
   /* 2020 = 1, 2, 3, 4, 5*/
   /* 2019 Q1 = 6,7,8,9  */
   /* 2018 = 6,7,8,9 */
@@ -164,7 +174,7 @@ dt {
 }
 
 .toggle-box + label:before {
-  background-color: #4F5150;
+  background-color: #223a59;
   border-radius: 2.75em;
   color: #FFFFFF;
   content: "+";
@@ -176,6 +186,7 @@ dt {
   line-height: 2.75em;
   text-align: center;
   width: 2.75em;
+  filter: drop-shadow(2px 2px 0px #244f88);
 }
 
 .toggle-box:checked + label:before {
