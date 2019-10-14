@@ -2,15 +2,14 @@ html {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: white;
   color: black;
   font-size: 20px;
 }
 
 body {
- background: linear-gradient(to bottom, #7ea5ff 0%, #182848 100%);
- margin: 0;
- padding: 0;
+  background: linear-gradient(to bottom, rgba(126, 165, 255, 0.7) 0%,rgba( 	24, 40, 72, 0.95) 100%), url("../img/blue-texture.jpg");
+  margin: 0;
+  padding: 0;
 } 
  
 @keyframes swinging{
@@ -67,7 +66,7 @@ footer > a {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(34, 8em);
+  grid-template-rows: repeat(36, 8em);
   /* 2020 = 1, 2, 3, 4, 5*/
   /* 2019 Q1 = 6,7,8,9  */
   /* 2018 = 6,7,8,9 */
