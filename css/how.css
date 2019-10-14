@@ -31,6 +31,7 @@ body {
 h1, h2, h3, h4 {
   margin: 0;
   font-family: 'Playfair Display', serif;
+  text-shadow: 1px 1px 0px rgba(255,255,255,0.4);
 }
 
 h1 {
@@ -87,6 +88,7 @@ footer > a {
   border-bottom: 4px solid #223a59;
   margin: 0.25em;
   background: rgba(1,1,1,15%);
+  box-shadow: 2px 2px 0px rgb(0,0,0,0.25);
 }
 
 .grid-container div:nth-child(even) {
@@ -197,22 +199,32 @@ footer > a {
   display: block;
 }
 
-.toggle-box + label:before {
-  background-color: #223a59;
-  border-radius: 2.75em;
+.toggle-box + label::before {
+  background-color: #4879b9;
+  border-radius: 0.15em;
   color: #FFFFFF;
-  content: "+";
+  content: "\0270F";
+  transform: rotate(180deg);
   display: block;
   float: right;
   font-weight: bold;
-  font-size: 1.5em;
-  height: 2.75em;
-  line-height: 2.75em;
+  font-size: 2.5em;
+  height: 1.25em;
+  line-height: 1.25em;
   text-align: center;
-  width: 2.75em;
-  filter: drop-shadow(2px 2px 0px #244f88);
+  width: 1.75em;
+  transition: all 0.7s;
+  transition-duration: 0.7s;
+  box-shadow: -3px -4px 1px rgba(26, 49, 91, 0.8);
 }
 
-.toggle-box:checked + label:before {
-  content: "\2212";
+.toggle-box + label:hover::before {
+  background-color: #335d95;
+  font-size: 2.55em;
+}
+
+.toggle-box + label:active::before {
+  background-color: #163155;
+  font-size: 2.6em;
+  content: "\02710";
 }
