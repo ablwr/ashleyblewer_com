@@ -25,6 +25,7 @@ body {
   transform: rotate(10deg);
   transform-origin: bottom;
   animation: swinging 15s ease-in-out forwards infinite;
+  opacity: 0.8;
 }
 
 h1, h2, h3, h4 {
