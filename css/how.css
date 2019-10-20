@@ -13,18 +13,19 @@ body {
 } 
  
 @keyframes swinging{
-    0%{transform: rotate(5deg);}
-    60%{transform: rotate(12deg) translate(10em,-2em);}
-    100%{transform: rotate(5deg);}
+    0%{transform: rotate(-10deg);}
+    60%{transform: rotate(10deg) translate(10vw,-10vw);}
+    100%{transform: rotate(-10deg);}
 }
 
 .human {
-  padding-top: 4em;
+  padding-top: 4vh;
   position: absolute;
   transform: rotate(0deg);
   transform-origin: bottom;
   animation: swinging 15s ease-in-out forwards infinite;
   opacity: 0.8;
+  width: 70vw;
 }
 
 h1, h2, h3, h4 {
@@ -35,8 +36,8 @@ h1, h2, h3, h4 {
 
 h1 {
   font-style: italic;
-  padding: 5em;
-  padding-top: 12em;
+  padding: 8vh;
+  padding-top: 10em;
   font-size: 3em;
   color: rgb(21, 21, 89);
 }
