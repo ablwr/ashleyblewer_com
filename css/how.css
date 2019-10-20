@@ -24,7 +24,7 @@ body {
   transform: rotate(0deg);
   transform-origin: bottom;
   animation: swinging 15s ease-in-out forwards infinite;
-  opacity: 0.8;
+  opacity: 0.7;
   width: 70vw;
 }
 
@@ -89,13 +89,13 @@ a, a:visited {
 }
 
 .grid-container div:nth-child(even) {
-  margin-right: -0.4em;
-  transform: rotate(0.25deg);
+  margin-right: -0.5em;
+  transform: rotate(0.5deg);
 }
 
 .grid-container div:nth-child(odd) {
-  margin-left: -0.4em;
-  transform: rotate(-0.25deg);
+  margin-left: -0.5em;
+  transform: rotate(-0.5deg);
 }
 
 @media (max-width: 777px) {
@@ -247,10 +247,9 @@ a, a:visited {
   line-height: 1.25em;
   text-align: center;
   width: 1.75em;
-  transition: all 0.7s;
-  transition-duration: 0.7s;
+  transition: all 0.4s;
   box-shadow: -3px -4px 1px rgba(26, 49, 91, 0.8);
-  z-index:5000;
+  z-index: 5000;
 }
 
 .toggle-box + label:hover::before {
