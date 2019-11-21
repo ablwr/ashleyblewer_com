@@ -130,6 +130,11 @@ a, a:visited {
   font-weight: bold;
 }
 
+.grid-container .dvrescue {
+  grid-column: 3 / 5;
+  grid-row: 1 / 6;
+}
+
 .grid-container .pratt {
   grid-column: 5 / 7;
   grid-row: 1 / 6;
