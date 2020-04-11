@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>my jams</title>
+  <style type="text/css">
+
+    body {
+      display: grid;
+      font-family: monospace;
+      font-size: 2em;
+    }
+
+    header, footer {
+      background: #fbbef4;
+      box-shadow: -4px -4px blue;
+    }
+
+    footer {
+      padding: 1em;
+      margin-top: 0.5em;
+    }
+
+    main {
+      background: #95ee95;
+    }
+
+    #date, #past summary {
+      padding: 1em;
+      background: #ddd;
+      margin: 1em 70% 1em 1em;
+      box-shadow: 1px 1px black;
+    }
+
+    li {
+      margin-left: 3em;
+      list-style: disclosure-closed;
+    }
+
+    #title {
+      margin-left: 40%;
+      padding: 1em;
+      background: #f7975e;
+      box-shadow: 1px 1px black;
+    }
+
+    #source {
+      margin-left: 20%;
+      padding-top: 1em;
+    }
+
+    iframe {
+      position: inherit;
+    }
+
+    .jam {
+      font-size: 4em;
+      float: left;
+    }
+
+    h1 {
+      float: left;
+      font-style: italic;
+      box-shadow: 10px 10px 1px 18px yellow;
+      padding: 0.2em;
+      margin: 0.5em;
+    }
+
+  </style>
+</head>
+<body>
+<!-- drawing time -->
+<header>
+  <span class="jam">🍯</span> <h1>my {quarantine} jams</h1>
+</header>
+<main>
+  <section id="today">
+    <div id="date">...</div>
+    <div id="title">... - ...</div>
+    <div id="source">
+      
+      
+    </div>
+  </section>
+  <section id="past">
+    <summary>Previous jams</summary>
+  </section>
+</main>
+<footer><a href="https://ashleyblewer.com">⬅⬅⬅</a> TTFN 🌊 </footer>
+<!-- parsing time -->
+<script src='js/tabletop.min.js'></script>
+<script type='text/javascript'>    
+  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1z9_U9BsNGIWBNurejCTqDwL1QoiyltyXcG5xPklbe-Q/edit?usp=sharing';
+
+  function init() {
+    Tabletop.init( { key: publicSpreadsheetUrl,
+                     callback: showInfo,
+                     simpleSheet: true } )
+  }
+
+  function showInfo(data, tabletop) {
+    let d = data;
+    document.getElementById("date").innerText = ('🌞 ' + data[0]["Date"])
+    document.getElementById("title").innerText = ('🎼 ' + data[0]["Title"])
+
+    if (data[0]["SourceType"] == "spotify") {
+      document.getElementById("source").innerHTML += '<iframe src="' + data[0]["SourceLink"] + '" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'
+    } else if (data[0]["SourceType"] == "youtube") {
+      document.getElementById("source").innerHTML += '<iframe width="560" height="315" src="' + data[0]["SourceLink"] + '" frameborder="0"></iframe>'
+    } else {
+
+    }
+    for (var i = 1; i < data.length; i++) {
+      document.getElementById("past").innerHTML += "<li>" + data[i]["Date"] + " <a href='" + data[i]["SourceLink"] + "'>" + data[i]["Title"] + "</a></li>"
+    };
+     
+  }
+
+  let today = new Date().toJSON().slice(0,10);
+
+  window.addEventListener('DOMContentLoaded', init)
+</script>
+
+</body>
+</html>
