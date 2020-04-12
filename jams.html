@@ -47,7 +47,7 @@
     }
 
     #source {
-      margin-left: 20%;
+      margin-left: 1em;
       padding-top: 1em;
     }
 
@@ -85,10 +85,10 @@
     </div>
   </section>
   <section id="past">
-    <summary>Previous jams</summary>
+    <summary>Previous jams 🌚</summary>
   </section>
 </main>
-<footer><a href="https://ashleyblewer.com">⬅⬅⬅</a> TTFN 🌊 </footer>
+<footer><a href="https://ashleyblewer.com">↫ ↫ ↫</a> TTFN 🌊 </footer>
 <!-- parsing time -->
 <script src='js/tabletop.min.js'></script>
 <script type='text/javascript'>    
@@ -108,7 +108,7 @@
     if (data[0]["SourceType"] == "spotify") {
       document.getElementById("source").innerHTML += '<iframe src="' + data[0]["SourceLink"] + '" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'
     } else if (data[0]["SourceType"] == "youtube") {
-      document.getElementById("source").innerHTML += '<iframe width="560" height="315" src="' + data[0]["SourceLink"] + '" frameborder="0"></iframe>'
+      document.getElementById("source").innerHTML += '<iframe width="300" height="300" src="' + data[0]["SourceLink"] + '" frameborder="0"></iframe>'
     } else {
 
     }
@@ -117,8 +117,6 @@
     };
      
   }
-
-  let today = new Date().toJSON().slice(0,10);
 
   window.addEventListener('DOMContentLoaded', init)
 </script>
