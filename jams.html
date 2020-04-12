@@ -110,7 +110,7 @@
     } else if (data[0]["SourceType"] == "youtube") {
       document.getElementById("source").innerHTML += '<iframe width="300" height="300" src="' + data[0]["SourceLink"] + '" frameborder="0"></iframe>'
     } else {
-
+      document.getElementById("source").innerHTML += "<a href='" + data[i]["SourceLink"] + "'>" + data[i]["Title"] + "</a>"
     }
     for (var i = 1; i < data.length; i++) {
       document.getElementById("past").innerHTML += "<li>" + data[i]["Date"] + " <a href='" + data[i]["SourceLink"] + "'>" + data[i]["Title"] + "</a></li>"
