@@ -109,6 +109,8 @@
       document.getElementById("source").innerHTML += '<iframe src="' + data[0]["SourceLink"] + '" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>'
     } else if (data[0]["SourceType"] == "youtube") {
       document.getElementById("source").innerHTML += '<iframe width="300" height="300" src="' + data[0]["SourceLink"] + '" frameborder="0"></iframe>'
+    } else if (data[0]["SourceType"] == "soundcloud") {
+      document.getElementById("source").innerHTML += '<iframe width="400" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//' + data[0]["SourceLink"] + '&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>'
     } else {
       document.getElementById("source").innerHTML += "<a href='" + data[i]["SourceLink"] + "'>" + data[i]["Title"] + "</a>"
     }
