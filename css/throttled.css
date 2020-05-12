@@ -42,7 +42,8 @@ article summary {
 article section {
 	grid-column: 3/6;
 	padding-top: 4em;
-	width: 40vmax;
+	width: 50vmax;
+	padding: 1em;
 }
 
 .scroll-left, .scroll-right {
