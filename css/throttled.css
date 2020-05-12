@@ -35,12 +35,14 @@ article {
 }
 
 article summary {
-  grid-column: 2/4;
+	grid-column: 2/5;
+	width: 30vmax;
 }
 
 article section {
-  grid-column: 3/5;
-  padding-top: 4em;
+	grid-column: 3/6;
+	padding-top: 4em;
+	width: 40vmax;
 }
 
 .scroll-left, .scroll-right {
@@ -48,7 +50,6 @@ article section {
 	display: block;
 	overflow: hidden;
 	position: relative;
-	width: 50vw;
 }
 
 .scroll-left p, .scroll-right p {
