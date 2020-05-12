@@ -58,19 +58,19 @@ article section {
 	width: 100%;
 	height: 100%;
 	margin: 0;
-	line-height: 50px;
-	text-align: center;
 }
 
 .scroll-left p {
 	transform:translateX(100%);
 	animation: scroll-left 30s linear infinite;
+	text-align: left;
 }
 
 
 .scroll-right p {
 	transform:translateX(100%);
 	animation: scroll-right 30s linear infinite;
+	text-align: right;
 }
 
 
