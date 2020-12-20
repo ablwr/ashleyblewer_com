@@ -404,6 +404,7 @@ section > div > ul {
   .diamond-two > .lines {
     display: none;
   }
+  #a, #b { animation: none; }
 }
 
 
