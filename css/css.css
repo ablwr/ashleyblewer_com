@@ -45,7 +45,7 @@ h3 {
 }
 
 ul {
-  list-style: disclosure-closed;
+  list-style: none;
 }
 
 ul li {
