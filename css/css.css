@@ -110,7 +110,6 @@ header {
   font-size: 3.5vw;
   margin: 0;
   letter-spacing: 0.55vw;
-  font-weight: bold;
   font-style: italic;
   line-height: 4vw;
   margin-left: -1.1vw;
@@ -169,7 +168,8 @@ header {
   width: 16.5vw;
   line-height: 4vw;
   letter-spacing: 0.2vw;
-  text-shadow: 1px 1px rgb(137, 210, 239)
+  text-shadow: 1px 1px rgb(137, 210, 239);
+  font-weight: bold;
 }
 
 .diamond > hr {
@@ -381,16 +381,13 @@ section > div > ul {
   }
   .diamond-one {
     margin-bottom: -20vw;
-    font-weight: bold;
   }
   .diamond-one > div > h1 {
-    font-weight: bold;
     font-size: 5vw;
   }
   .diamond-two {
     margin-top: -5vw;
     margin-right: 8vw;
-    font-weight: bold;
   }
   .diamond > .tagline {
     text-align: right;
@@ -398,8 +395,7 @@ section > div > ul {
     line-height: 2.5vw;
     width: 20vw;
     padding-left: 9vw;
-    letter-spacing: 0vw;
-    font-weight: bold;   
+    letter-spacing: 0vw;  
   }
   .diamond-two > .lines {
     display: none;
