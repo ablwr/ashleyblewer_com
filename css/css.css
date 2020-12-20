@@ -65,8 +65,9 @@ header {
 
 /* pattern helpfully generated using patternify.com */
 .diamond {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEklEQVQImWNgIBl4t575T7ouAIgBApygrbRzAAAAAElFTkSuQmCC);
   background-color: rgba(137, 210, 239, 0.9);
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEklEQVQImWNgIBl4t575T7ouAIgBApygrbRzAAAAAElFTkSuQmCC),
+                    linear-gradient(291deg, rgba(120,195,227,0.9) 10%, rgba(137,210,239,0.8) 50%, rgba(150,229,251,0.5) 88%);
   border: 1px solid white;
   width: 30vw;
   height: 30vw;
