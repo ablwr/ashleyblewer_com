@@ -64,6 +64,7 @@ header {
 }
 
 /* pattern helpfully generated using patternify.com */
+/* gradient came together using https://cssgradient.io/ */
 .diamond {
   background-color: rgba(137, 210, 239, 0.9);
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEklEQVQImWNgIBl4t575T7ouAIgBApygrbRzAAAAAElFTkSuQmCC),
