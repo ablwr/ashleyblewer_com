@@ -114,10 +114,51 @@ header {
   font-style: italic;
   line-height: 4vw;
   margin-left: -1.1vw;
+  opacity: 0.9;
 }
 
 .diamond-one > div > h1:hover {
   text-shadow: 5px 5px rgb(137, 210, 239);
+  opacity: 1;
+}
+
+#a {
+  animation: slowNeon 12s linear infinite;
+}
+
+#b {
+  animation: slowNeonReverse 12s linear infinite;
+}
+
+/* this is a mess I haven't cleaned up but I don't really care */
+@keyframes slowNeon {
+  0% {
+  text-shadow: 2px 4px #1dacd6;
+  }
+  25% {
+  text-shadow: 2px 4px #1dacd6;
+  }
+  75% {
+  text-shadow: 6px 6px #1dacd6;
+  }
+  100% {
+  text-shadow: 2px 4px #1dacd6;
+  }
+}
+
+@keyframes slowNeonReverse {
+  0% {
+  text-shadow: 2px 4px #1dacd6;
+  }
+  25% {
+  text-shadow: 6px 6px #1dacd6;
+  }
+  75% {
+  text-shadow: 2px 4px #1dacd6;
+  }
+  100% {
+  text-shadow: 2px 4px #1dacd6;
+  }
 }
 
 .diamond > div {
@@ -206,7 +247,7 @@ header {
 }
 
 .diamond-one .lines > div {
-  animation: moveOne 11s linear;
+  animation: moveOne 18s linear;
 }
 
 .diamond-two .lines > div {
