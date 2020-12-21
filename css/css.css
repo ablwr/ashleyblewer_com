@@ -397,7 +397,7 @@ section > div > ul {
     padding-left: 9vw;
     letter-spacing: 0vw;  
   }
-  .diamond-two > .lines {
+  .diamond-one > .lines, .diamond-two > .lines {
     display: none;
   }
   #a, #b { animation: none; }
