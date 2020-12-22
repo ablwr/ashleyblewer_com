@@ -41,7 +41,7 @@ a:visited {
 main {
   background-color: rgba(137, 210, 239, 0.9);
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAFElEQVQImWNgwAbC1cP/Y5XAqhIAVAgDqU6jXT0AAAAASUVORK5CYII=),
-                    linear-gradient(0deg, rgba(255,192,0,1) 0%, rgba(100,217,83,0.5) 12%, rgba(58,136,180,0.5) 35%, rgba(131,58,180,0.5) 64%, rgba(255,117,210,0.5) 83%, rgba(255,149,0,0.75) 100%);
+                    linear-gradient(352deg, rgba(255,192,0,1) 0%, rgba(100,217,83,0.5) 12%, rgba(58,136,180,0.5) 35%, rgba(131,58,180,0.5) 64%, rgba(255,117,210,0.5) 83%, rgba(255,149,0,0.75) 100%);
   padding: 1em;
 }
 
