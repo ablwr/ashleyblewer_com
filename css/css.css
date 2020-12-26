@@ -68,7 +68,7 @@ header {
 .diamond {
   background-color: rgba(137, 210, 239, 0.9);
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEklEQVQImWNgIBl4t575T7ouAIgBApygrbRzAAAAAElFTkSuQmCC),
-                    linear-gradient(291deg, rgba(120,195,227,0.9) 10%, rgba(137,210,239,0.8) 50%, rgba(150,229,251,0.5) 88%);
+                    linear-gradient(305deg, rgba(120,185,227,0.9) 10%, rgba(137,210,239,0.8) 50%, rgba(150,239,251,0.5) 88%);
   border: 1px solid white;
   width: 30vw;
   height: 30vw;
@@ -87,8 +87,10 @@ header {
 
 .diamond-two {
   justify-self: end;
-  margin-right: 0vw;
   transform: rotate(45deg);
+  margin-right: 10vw;
+  margin-top: 6.66vw;
+  margin-left: -6.66vw;
 }
 
 .diamond::after {
@@ -107,18 +109,16 @@ header {
 .diamond > div > h1 {
   display: inline-block;
   color: rgb(42, 43, 102);
-  font-size: 3.5vw;
+  font-size: 3.75vw;
   margin: 0;
   letter-spacing: 0.55vw;
   font-style: italic;
-  line-height: 4vw;
   margin-left: -1.1vw;
-  opacity: 0.9;
 }
 
 .diamond-one > div > h1:hover {
   text-shadow: 5px 5px rgb(137, 210, 239);
-  opacity: 1;
+  opacity: 0.9;
 }
 
 #a {
@@ -138,7 +138,7 @@ header {
   text-shadow: 2px 4px #1dacd6;
   }
   75% {
-  text-shadow: 6px 6px #1dacd6;
+  text-shadow: 4px 4px #1dacd6;
   }
   100% {
   text-shadow: 2px 4px #1dacd6;
@@ -150,7 +150,7 @@ header {
   text-shadow: 2px 4px #1dacd6;
   }
   25% {
-  text-shadow: 6px 6px #1dacd6;
+  text-shadow: 4px 4px #1dacd6;
   }
   75% {
   text-shadow: 2px 4px #1dacd6;
@@ -162,14 +162,13 @@ header {
 
 .diamond > div {
   border-top: 1px solid white;
-  transform: rotate(-45deg);
+  transform: rotate(-45.1deg);
   min-height: 5.5vw;
   margin: 0vw;
   width: 16.5vw;
   line-height: 4vw;
   letter-spacing: 0.2vw;
   text-shadow: 1px 1px rgb(137, 210, 239);
-  font-weight: bold;
 }
 
 .diamond > hr {
@@ -180,11 +179,12 @@ header {
 
 .diamond > .tagline {
   text-align: right;
-  font-size: 1vw;
+  font-size: 1.25vw;
   line-height: 1vw;
-  width: 8vw;
-  padding-left: 9vw;
+  width: 9vw;
+  padding-left: 10vw;
   letter-spacing: 0vw;
+  text-shadow: 0 !important;
 }
 
 .diamond > .tagline span {
@@ -251,12 +251,12 @@ header {
 }
 
 .diamond-two .lines > div {
-  animation: moveTwo 6s linear;
+  animation: moveTwo 8s linear;
 }
 
 @keyframes moveOne {
   0% {
-    top: -43vw;
+    top: -63vw;
   }
   86% {
     top: -22vw;
@@ -268,10 +268,10 @@ header {
 
 @keyframes moveTwo {
   0% {
-    top: -0vw;
+    top: 20vw;
   }
   86% {
-    top: -20vw;
+    top: -19vw;
   }
   100% {
     top: -21vw;
@@ -292,14 +292,14 @@ header {
 #content section {
   border: 1px solid white;
   text-align: right;
-  padding: 0 0.2vw 0 0.2vw;
+  padding: 0 0.5vw 0 0.5vw;
   min-width: 1vw;
   align-content: center;
 }
 
 #bio {
   grid-column: 1/7;
-  padding-left: 6.66vw !important;
+  text-align: left !important;
 }
 
 #nada {
@@ -386,7 +386,7 @@ section > div > ul {
     font-size: 5vw;
   }
   .diamond-two {
-    margin-top: -5vw;
+    margin-top: -6vw;
     margin-right: 8vw;
   }
   .diamond > .tagline {
