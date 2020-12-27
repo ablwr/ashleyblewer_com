@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
 /* general */
 
 html, body {
@@ -10,8 +12,11 @@ html, body {
   padding: 0;
 }
 
+h1 , h3, .diamond > div {
+  font-family: "Space Grotesk";
+}
+
 body {
-  color: rgb(42, 43, 102);
   background-color: rgba(242, 206, 230, 0.33);
   height: 100%;
   margin: 0;
@@ -26,8 +31,8 @@ article {
 }
 
 a, a:visited {
-  color:rgb(0,84,184,0.9);
-  text-decoration-style: double;
+  color: rgb(10, 115, 147);
+  text-decoration-style: dashed;
   text-decoration-color: rgba(0, 0, 0, 0.66);
 }
 
@@ -42,14 +47,16 @@ a:visited {
 h3 {
   margin-bottom: 0;
   line-height: 0;
+  font-weight: 500;
 }
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 ul li {
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 }
 
 
@@ -109,55 +116,17 @@ header {
 .diamond > div > h1 {
   display: inline-block;
   color: rgb(42, 43, 102);
-  font-size: 3.75vw;
+  font-size: 4.2vw;
   margin: 0;
   letter-spacing: 0.55vw;
   font-style: italic;
   margin-left: -1.1vw;
+  text-shadow: 1px 1px rgb(206, 228, 237);
 }
 
 .diamond-one > div > h1:hover {
-  text-shadow: 5px 5px rgb(137, 210, 239);
+  text-shadow: 4px 4px rgb(137, 210, 239);
   opacity: 0.9;
-}
-
-#a {
-  animation: slowNeon 12s linear infinite;
-}
-
-#b {
-  animation: slowNeonReverse 12s linear infinite;
-}
-
-/* this is a mess I haven't cleaned up but I don't really care */
-@keyframes slowNeon {
-  0% {
-  text-shadow: 2px 4px #1dacd6;
-  }
-  25% {
-  text-shadow: 2px 4px #1dacd6;
-  }
-  75% {
-  text-shadow: 4px 4px #1dacd6;
-  }
-  100% {
-  text-shadow: 2px 4px #1dacd6;
-  }
-}
-
-@keyframes slowNeonReverse {
-  0% {
-  text-shadow: 2px 4px #1dacd6;
-  }
-  25% {
-  text-shadow: 4px 4px #1dacd6;
-  }
-  75% {
-  text-shadow: 2px 4px #1dacd6;
-  }
-  100% {
-  text-shadow: 2px 4px #1dacd6;
-  }
 }
 
 .diamond > div {
@@ -168,7 +137,7 @@ header {
   width: 16.5vw;
   line-height: 4vw;
   letter-spacing: 0.2vw;
-  text-shadow: 1px 1px rgb(137, 210, 239);
+  text-shadow: 1px 1px rgb(206, 228, 237);
 }
 
 .diamond > hr {
@@ -180,11 +149,15 @@ header {
 .diamond > .tagline {
   text-align: right;
   font-size: 1.25vw;
-  line-height: 1vw;
+  line-height: 1.1vw;
+  font-style: italic;
+  font-weight: 500;
   width: 9vw;
   padding-left: 10vw;
   letter-spacing: 0vw;
   text-shadow: 0 !important;
+  padding-top: 1px;
+  text-shadow: none;
 }
 
 .diamond > .tagline span {
@@ -223,23 +196,23 @@ header {
 }
 
 .diamond-one .lines div:nth-child(1) {
-  left: 21.5vw;
+  left: 25vw;
 }
 
 .diamond-one .lines div:nth-child(2) {
-  left: 23.5vw;
+  left: 24vw;
 }
 
 .diamond-one .lines div:nth-child(3) {
-  left: 25.5vw;
-}
-
-.diamond-two .lines div:nth-child(1) {
   left: 26vw;
 }
 
-.diamond-two .lines div:nth-child(2) {
+.diamond-two .lines div:nth-child(1) {
   left: 27vw;
+}
+
+.diamond-two .lines div:nth-child(2) {
+  left: 29vw;
 }
 
 .diamond-two .lines div:nth-child(3) {
@@ -383,7 +356,9 @@ section > div > ul {
     margin-bottom: -20vw;
   }
   .diamond-one > div > h1 {
-    font-size: 5vw;
+    font-size: 8vw;
+    line-height: 10vw;
+    padding-bottom: 2vw;
   }
   .diamond-two {
     margin-top: -6vw;
@@ -459,7 +434,7 @@ section > div > ul {
 
 #portfolio .box:nth-child(1) {
   margin-left: 2vw;
-  margin-top: 3.25vw;
+  margin-top: 2.25vw;
   transform: rotateX(55deg) rotateY(25deg) rotateZ(70deg) translateY(-20px);
 }
 
