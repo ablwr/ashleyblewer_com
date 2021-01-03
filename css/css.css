@@ -5,7 +5,7 @@
 /* general */
 
 html, body {
-  height: 100%;
+  height: 100vh;
   font-family: "Inconsolata", monospace;
   font-size: 16px;
   margin: 0;
@@ -26,8 +26,7 @@ body {
 
 article {
   display: grid;
-  grid-template-rows: 1fr auto;
-  grid-template-columns: 66% 33%;
+  grid-template-columns: 60% 39%;
 }
 
 a, a:visited {
@@ -63,11 +62,8 @@ ul li {
 /* header */
 
 header {
-  margin-top: 8vw;
-  margin-bottom: 10vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  font-size: 1vw;
 }
 
 /* pattern helpfully generated using patternify.com */
@@ -76,41 +72,29 @@ header {
   background-color: rgba(137, 210, 239, 0.9);
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEklEQVQImWNgIBl4t575T7ouAIgBApygrbRzAAAAAElFTkSuQmCC),
                     linear-gradient(305deg, rgba(120,185,227,0.9) 10%, rgba(137,210,239,0.8) 50%, rgba(150,239,251,0.5) 88%);
-  border: 1px solid white;
+  border: 1px solid gray;
   width: 30vw;
   height: 30vw;
   overflow: hidden;
   font-size: 2.25vw;
   font-weight: normal;
   color: rgba(10, 30, 96, 0.9);
-  box-shadow: 6px -6px #e1e7ed;
+  box-shadow: 6px -6px #c4b8b8;
 }
 
 .diamond-one {
   justify-self: start;
-  transform: rotate(45deg);
-  margin-left: 6.66vw;
+  /*transform: rotate(45deg);*/
+  margin-left: 3.2vw;
+  margin-top: 3.2vw;
 }
 
 .diamond-two {
   justify-self: end;
   transform: rotate(45deg);
-  margin-right: 10vw;
-  margin-top: 6.66vw;
-  margin-left: -6.66vw;
-}
-
-.diamond::after {
-  content: "";
-  height: 100%;
-  background: url("../img/concrete.jpg");
-  opacity: 0.33;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; 
+margin-right: 15vw;
+margin-top: 11.2vw;
+margin-left: -8vw;
 }
 
 .diamond > div > h1 {
@@ -255,11 +239,12 @@ header {
 /*main*/
 
 #content {
-  margin-top: 1.75vw;
+  margin-top: 0.75vw;
   display: inline-grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   grid-gap: 0;
+  height: 95vh;
 }
 
 #content section {
@@ -361,8 +346,7 @@ section > div > ul {
     padding-bottom: 2vw;
   }
   .diamond-two {
-    margin-top: -6vw;
-    margin-right: 8vw;
+    margin-top: -16vw;
   }
   .diamond > .tagline {
     text-align: right;
@@ -376,6 +360,7 @@ section > div > ul {
     display: none;
   }
   #a, #b { animation: none; }
+  #content { margin-top: 6.66vw; }
 }
 
 
@@ -428,7 +413,7 @@ section > div > ul {
 
 #art .box:nth-child(1) {
   margin-left: 2vw;
-  margin-top: 3.5vw;
+  margin-top: 2.5vw;
   transform: rotateX(45deg) rotateY(15deg) rotateZ(60deg) translateY(-20px);
 }
 
@@ -439,8 +424,8 @@ section > div > ul {
 }
 
 #nada .box:nth-child(1) {
-  margin-left: 12vw;
-  margin-top: 7.5vw;
+  margin-left: 18vw;
+  margin-top: 8.5vw;
   transform: rotateX(40deg) rotateY(10deg) rotateZ(55deg) translateY(-20px);
 }
 
