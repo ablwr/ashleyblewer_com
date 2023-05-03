@@ -260,12 +260,12 @@ margin-left: -8vw;
   text-align: left !important;
 }
 
-#nada {
+#work {
   grid-column:1/4;
   justify-content: center;
 }
 
-#nada img {
+#work img {
   width: auto;
   height: 75px;
   filter: opacity(80%);
@@ -284,7 +284,7 @@ margin-left: -8vw;
   grid-column: 3/7;
 }
 
-#work {
+#pub {
   grid-column: 1/4;
 }
 
@@ -361,6 +361,7 @@ section > div > ul {
   }
   #a, #b { animation: none; }
   #content { margin-top: 6.66vw; }
+  #content section { padding-right: 2vw; }
 }
 
 
@@ -413,20 +414,20 @@ section > div > ul {
 
 #art .box:nth-child(1) {
   margin-left: 2vw;
-  margin-top: 2.5vw;
+  margin-top: 3.5vw;
   transform: rotateX(45deg) rotateY(15deg) rotateZ(60deg) translateY(-20px);
 }
 
 #portfolio .box:nth-child(1) {
   margin-left: 2vw;
-  margin-top: 2.25vw;
+  margin-top: 3.25vw;
   transform: rotateX(55deg) rotateY(25deg) rotateZ(70deg) translateY(-20px);
 }
 
-#nada .box:nth-child(1) {
-  margin-left: 18vw;
-  margin-top: 8.5vw;
-  transform: rotateX(40deg) rotateY(10deg) rotateZ(55deg) translateY(-20px);
+#surf .box:nth-child(1) {
+  margin-left: 5vw;
+  margin-top: 7vw;
+  transform: rotateX(55deg) rotateY(30deg) rotateZ(70deg) translateY(-20px);
 }
 
 #art .box__face {
@@ -441,16 +442,22 @@ section > div > ul {
   background-blend-mode: color-burn;
 }
 
-#nada .box__face {
+#surf .box__face {
+  position: absolute;
+  background: linear-gradient(255deg, #54bbe8, black), url(data:image/svg+xml;base64,PHN2ZwogIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZycKICB4bWxuczp4bGluaz0naHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluaycKICB3aWR0aD0nMzAwJyBoZWlnaHQ9JzMwMCc+CgogICAgPGZpbHRlciBpZD0nbicgeD0nMCcgeT0nMCc+CiAgICAgICAgICAgIDxmZVR1cmJ1bGVuY2UKICAgICAgICAgICAgICB0eXBlPSdmcmFjdGFsTm9pc2UnCiAgICAgICAgICAgICAgYmFzZUZyZXF1ZW5jeT0nMC42JwogICAgICAgICAgICAgIHN0aXRjaFRpbGVzPSdzdGl0Y2gnLz4KICAgIDwvZmlsdGVyPgoKICAgIDxyZWN0IHdpZHRoPSczMDAnIGhlaWdodD0nMzAwJyBmaWxsPScjZmZmJy8+CiAgICA8cmVjdCB3aWR0aD0nMzAwJyBoZWlnaHQ9JzMwMCcgZmlsdGVyPSJ1cmwoI24pIiBvcGFjaXR5PScwLjknLz4KPC9zdmc+);
+  background-blend-mode: color-burn;
+}
+
+#art .box__face:nth-child(2), #portfolio .box__face:nth-child(2), #surf .box__face:nth-child(2) {
   position: absolute;
   background: linear-gradient(255deg, #65aac8, black), url(data:image/svg+xml;base64,PHN2ZwogIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZycKICB4bWxuczp4bGluaz0naHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluaycKICB3aWR0aD0nMzAwJyBoZWlnaHQ9JzMwMCc+CgogICAgPGZpbHRlciBpZD0nbicgeD0nMCcgeT0nMCc+CiAgICAgICAgICAgIDxmZVR1cmJ1bGVuY2UKICAgICAgICAgICAgICB0eXBlPSdmcmFjdGFsTm9pc2UnCiAgICAgICAgICAgICAgYmFzZUZyZXF1ZW5jeT0nMC42JwogICAgICAgICAgICAgIHN0aXRjaFRpbGVzPSdzdGl0Y2gnLz4KICAgIDwvZmlsdGVyPgoKICAgIDxyZWN0IHdpZHRoPSczMDAnIGhlaWdodD0nMzAwJyBmaWxsPScjZmZmJy8+CiAgICA8cmVjdCB3aWR0aD0nMzAwJyBoZWlnaHQ9JzMwMCcgZmlsdGVyPSJ1cmwoI24pIiBvcGFjaXR5PScwLjknLz4KPC9zdmc+);
   background-blend-mode: color-burn;
 }
 
-#nada .box__face, #portfolio .box__face, #art .box__face {
+#surf .box__face, #portfolio .box__face, #art .box__face {
   opacity: 0.5;
 }
 
-#nada .box__face:hover, #portfolio .box__face:hover, #art .box__face:hover {
+#surf .box__face:hover, #portfolio .box__face:hover, #art .box__face:hover {
   opacity: 1;
 }
