@@ -1,85 +1,94 @@
 body {
-  font-family: Courier, monospace;
-  margin: 0;
-  padding: 0;
+    font-family: Courier, monospace;
+    margin: 0;
+    padding: 0;
 }
 
-header, footer {
-	justify-self: center;
-	text-align: center;
+header,
+footer {
+    justify-self: center;
+    text-align: center;
 }
 
 header {
-	padding-top: 15vh;
-	display: grid;
-	align-content: center;
-	justify-content: center;
+    padding-top: 15vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
 }
 
 h1 {
-	font-size: 4em;
+    font-size: 4em;
 }
 
 ul {
-	list-style: upper-roman;
+    list-style: upper-roman;
 }
 
 article {
-	display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  gap: 4em 4em;
-  grid-template-areas: ". . . . ." ". . . . ." ". . . . .";
-  padding-top: 4em;
-  line-height: 1.4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 4em 4em;
+    grid-template-areas: ". . . . ." ". . . . ." ". . . . .";
+    padding-top: 4em;
+    line-height: 1.4;
 }
 
 article summary {
-	grid-column: 2/5;
-	width: 30vmax;
+    grid-column: 2/5;
+    width: 30vmax;
 }
 
 article section {
-	grid-column: 3/6;
-	padding-top: 4em;
-	width: 50vmax;
-	padding: 1em;
+    grid-column: 3/6;
+    padding-top: 4em;
+    width: 50vmax;
+    padding: 1em;
 }
 
-.scroll-left, .scroll-right {
-	height: 50px;
-	display: block;
-	overflow: hidden;
-	position: relative;
+.scroll-left,
+.scroll-right {
+    height: 50px;
+    display: block;
+    overflow: hidden;
+    position: relative;
 }
 
-.scroll-left p, .scroll-right p {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	margin: 0;
+.scroll-left p,
+.scroll-right p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
 
 .scroll-left p {
-	transform:translateX(100%);
-	animation: scroll-left 30s linear infinite;
-	text-align: left;
+    transform: translateX(100%);
+    animation: scroll-left 30s linear infinite;
+    text-align: left;
 }
-
 
 .scroll-right p {
-	transform:translateX(100%);
-	animation: scroll-right 30s linear infinite;
-	text-align: right;
+    transform: translateX(100%);
+    animation: scroll-right 30s linear infinite;
+    text-align: right;
 }
 
-
 @keyframes scroll-left {
-	0% { transform: translateX(100%); }
-	100% { transform: translateX(-100%); }
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 @keyframes scroll-right {
-	0% { transform: translateX(-100%); }
-	100% { transform: translateX(100%); }
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
 }
