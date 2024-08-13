@@ -31,7 +31,6 @@ article {
 
 a, a:visited {
   color: rgb(10, 115, 147);
-  text-decoration-style: dashed;
   text-decoration-color: rgba(0, 0, 0, 0.66);
 }
 
